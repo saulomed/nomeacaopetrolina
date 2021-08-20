@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Di&aacute;rio Oficial - Edi&ccedil;&atilde;o 2.737 | Ano 11</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+
+        .toptitlebar {
+            color: white;
+            font-size: 0.8rem;
+            height: 20px;
+            font-family: Poppins, sans-serif;
+            text-align: center;
+            vertical-align: bottom;
+            padding: 5px 0 3px 0;
+            background: #4a4a4a;
+        }
+
+        .toptitlebar .login-icon {
+            margin-top: -18px;
+            padding-right: 5px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+<div class="toptitlebar">
+    <div class="title">
+        DIÁRIO OFICIAL - EDIÇÃO 2.737 | ANO 11
+    </div>
+
+    <div class="login-icon">
+        <a href="https://validator.w3.org/check?uri=https%3A%2F%2Fdoem.org.br%2Fpe%2FPetrolina"
+           target="_blank" style="text-decoration: none" class="link-outside-frame" title="Validador W3C">
+            <img src="https://doem.org.br/img/badge-w3c-white2.png" alt="W3C Valid" height="18">
+        </a>
+
+        &nbsp;
+
+        <a href="javascript:void(0)" style="text-decoration: none" title="Autenticidade, integridade, validade e transação eletrônica assegurada pelo ICP-Brasil, MP nº 2200-2/01.">
+            <img src="https://doem.org.br/img/icp_brasil.svg" alt="ICP Brasil" height="20">
+        </a>
+    </div>
+</div>
+
+<object data="https://doem.org.br/pdf.js/web/viewer.html?file=https%3A%2F%2Fdoem.org.br%2Fpe%2FPetrolina%2Farquivos%2Fdownload%2F467c711ba010d4ae83f06779ffd8f903%2Ff1c240e565af18062af23af62f9af938.pdf&eewo2ahB4fu8Aesh" id="pdfjs-object">
+    <embed src="https://doem.org.br/pdf.js/web/viewer.html?file=https%3A%2F%2Fdoem.org.br%2Fpe%2FPetrolina%2Farquivos%2Fdownload%2F467c711ba010d4ae83f06779ffd8f903%2Ff1c240e565af18062af23af62f9af938.pdf&eewo2ahB4fu8Aesh" id="pdfjs-embed"/>
+</object>
+
+<script>
+    (function () {
+        var addEvent = function (object, type, callback, useCapture) {
+            if (object === null || typeof object === 'undefined') return;
+
+            if (object.addEventListener) {
+                object.addEventListener(type, callback, useCapture || false);
+            } else if (object.attachEvent) {
+                object.attachEvent("on" + type, callback);
+            } else {
+                object["on" + type] = callback;
+            }
+        };
+
+        function resize_pdfjsviewer() {
+            document.getElementById('pdfjs-object').width = window.innerWidth;
+            document.getElementById('pdfjs-object').height = window.innerHeight;
+        }
+
+        addEvent(window, 'resize', function (event) {
+            resize_pdfjsviewer();
+        }, false);
+
+        resize_pdfjsviewer();
+    })();
+</script>
+
+<script>
+    (function (top) {
+        var elements = document.getElementsByClassName('link-outside-frame');
+
+        var clickListener = function (e) {
+            e.preventDefault();
+
+            top.open(this.href, this.target || '_self');
+
+            return false;
+        };
+
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].addEventListener('click', clickListener, false);
+        }
+    })(window.top !== window && window.top ? window.top : window)
+</script>
+</body>
+</html>
